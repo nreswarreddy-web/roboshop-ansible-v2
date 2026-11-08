@@ -24,7 +24,7 @@
 
   - name: Show component value
     debug:
-     msg: "{{ component }}"
+     msg: "{{ component | lower }}"
 
   - name: download the files
     get_url:
