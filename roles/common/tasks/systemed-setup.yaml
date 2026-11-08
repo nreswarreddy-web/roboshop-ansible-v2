@@ -1,4 +1,4 @@
-  - name: copy catalogue services 
+  - name: copy {{ component }} services 
     template:
-     src: catalogue.service.j2
-     dest: /etc/systemd/system/catalogue.service
+     src: "{{ component }}.service.j2"
+     dest: "/etc/systemd/system/{{ component }}.service"
