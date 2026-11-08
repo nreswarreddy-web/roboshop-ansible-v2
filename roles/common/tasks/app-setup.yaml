@@ -21,13 +21,14 @@
     file: 
      path: /app
      state: directory
+
   - name: Show component value
     debug:
      msg: "{{ component }}"
 
   - name: download the files
     get_url:
-     url:  https://raw.githubusercontent.com/daws-92s/roboshop-documentation/refs/heads/main/artifacts/{{ component }}-v4.zip
+     url:  https://raw.githubusercontent.com/daws-92s/roboshop-documentation/refs/heads/main/artifacts/{{ component | lower }}-v4.zip
      dest: /tmp/{{ component }}.zip
 
   - name: unzip {{ component }}
