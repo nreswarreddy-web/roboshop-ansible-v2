@@ -1,0 +1,17 @@
+  - name: reset nodejs module
+    command: dnf module reset nodejs -y
+
+  - name: disable node js 
+    command: dnf module disable nodejs -y
+  
+  - name: enable nodejs 24 module
+    command: dnf module enable nodejs:24 -y
+  
+  - name: install node js
+    dnf:
+     name: nodejs
+     state: present 
+  
+  - name: Install bottle python package
+    community.general.npm:
+      path: /app
