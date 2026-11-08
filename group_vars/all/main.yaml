@@ -7,3 +7,12 @@ mysql_root_password: "{{ vault_mysql_root_password }}"
 rabbitmq_user: "{{ vault_rabbitmq_user }}"
 rabbitmq_password : "{{ vault_rabbitmq_password }}"
 
+mongodb_host: mongodb.daw92ss.store
+redis_host: redis.daw92ss.store
+Catalogue_host: catalogue.daw92ss.store
+mysql_host: mysql.daw92ss.store
+user_host: user.daw92ss.store
+cart_host: cart.daw92ss.store
+rabbitmq_host: rabbitmq.daw92ss.store
+shipping_host: shipping.daw92ss.store
+payment_host: payment.daw92ss.store
