@@ -1,4 +1,4 @@
 - name: application setup
-  inculde_role:
-   name: common
-   task_from: app-setup
+  include_role:
+    name: common
+    tasks_from: app-setup
