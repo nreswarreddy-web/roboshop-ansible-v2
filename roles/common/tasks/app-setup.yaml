@@ -21,6 +21,9 @@
     file: 
      path: /app
      state: directory
+  - name: Show component value
+    debug:
+     msg: "{{ component }}"
 
   - name: download the files
     get_url:
